@@ -1,0 +1,274 @@
+html {
+    background: black;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+#footer {
+    color: aliceblue;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1;}
+}
+
+#main_1 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+#main_0 {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+#main_2 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+#main_3 {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+h1 {
+    color: rgb(255, 244, 229);
+    font: bold;
+}
+
+.calcus {
+    /*transform: translateX(531px);*/ 
+    border-radius: 10px;  
+}
+
+.calcus:hover {
+    border: 5px;
+    border-color: rgb(73, 80, 80);
+}
+
+.calcus1 {
+    /*transform: translate(780px, -60px);*/
+    border-radius: 10px;
+}
+
+.count {
+    /*transform: translateX(510px);*/
+    border-radius: 10px;
+    height: 30px;
+    width: 60px;
+    background-color: white;
+    color: black;
+    font-size: 17px;
+}
+
+.count:hover {
+    border: 5px;
+    border-color: aquamarine;
+    background-color: cadetblue;
+    color: rgb(191, 212, 212);
+}
+
+h2 {
+    color: rgb(240, 225, 205);
+    font: bold;
+}
+
+h3 {
+    color: rgb(255, 228, 194);
+    font: bold;
+}
+
+p {
+    color:rgb(255, 249, 237);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-transition: left 5s;
+    -moz-transition: left 5s;
+    transition: left 5s;
+}
+
+a {
+    color:rgb(155, 202, 243);
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+body {
+    margin: 0;
+}
+
+#footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background: rgb(36, 34, 34);
+}
+#ulhornavbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(29, 29, 29);
+    /*position: -webkit-sticky;
+    position: sticky;*/
+    top: 0;
+}
+
+/* ulhornavbar будет айди для списка ul в горизонтальном навбаре*/
+
+@-webkit-keyframes but_an {
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@keyframes but_an {
+    50% {opacity: 0.5}
+    100% {opacity: 1;}
+}
+
+#lihornavbar_1 {
+    margin: auto;
+    display: inline-block;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: but_an;
+    animation-name: but_an;
+}
+
+#lihornavbar_1 a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 45px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+#lihornavbar_1:hover {
+    width: 205px;
+}
+
+#lihornavbar_1 a:hover {
+    color: rgb(79, 64, 40);
+    background-color: #f7b335;
+    border-radius: 15px;
+}
+
+#lihornavbar_2 {
+    margin: auto;
+    display: inline-block;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: but_an;
+    animation-name: but_an;
+}
+
+#lihornavbar_2 a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 45px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+#lihornavbar_2:hover {
+    width: 205px;
+}
+
+#lihornavbar_2 a:hover {
+    color: rgb(79, 64, 40);
+    background-color: #f7b335;
+    border-radius: 15px;
+}
+
+#lihornavbar_3 {
+    margin: auto;
+    display: inline-block;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: but_an;
+    animation-name: but_an;
+}
+
+#lihornavbar_3 a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 45px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+#lihornavbar_3:hover {
+    width: 205px;
+}
+
+#lihornavbar_3 a:hover {
+    color: rgb(79, 64, 40);
+    background-color: #f7b335;
+    border-radius: 15px;
+}
+
+.active {
+    color: rgb(29, 29, 29);
+    background-color: #bc8b30af;
+    border-radius: 15px;
+}
+
+.operator {
+    height: 40px;
+    width: 40px;
+    border-radius: 15px;
+}
+
+.operator:hover {
+    background-color: rgb(118, 141, 142);
+    border-color: antiquewhite;
+    color: rgb(191, 212, 212);
+}
+
+.res {
+    color: rgb(233, 242, 232);
+    font-size: 25px;
+}   
+
+.algmath {
+    color: rgb(210, 206, 149);
+}
+
+.listmaths {
+    color: rgb(240, 255, 250);
+}
+
+

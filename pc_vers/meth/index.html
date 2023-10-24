@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="author" content="Матвей Теслов">
+        <meta name="description" content="Раздел математики">
+        <meta name="viewport" content="width=720px">
+        <title>Математика</title>
+    </head>
+    <body>
+
+        <div align = 'center'>
+            <ul id='ulhornavbar' align = 'center'><span>
+                <li id="lihornavbar_1" style=" font: bolder; font-size: 23px;"><a href="../main/index.html" title="Главная страница">Главная</a></li>
+                <li id="lihornavbar_2" class="active" style=" font: bolder; font-size: 23px;"><a href="../meth/index.html" title="Раздел математики">Математика</a></li>
+                <li id="lihornavbar_3" style=" font-size: 23px;"><a href="../physics/index.html" title="Раздел физики">Физика</a></li>
+            </span></ul>
+        </div>
+
+        <main>
+
+            <article id = 'main_1'>
+
+                <h2 align="center" style="font-size: 40px;">
+                    Калькулятор
+                </h2>
+
+                <div class="inputs" align = 'center'>
+                    <input id="num1" class="calcus" 
+                        placeholder="число"
+                        style="background-color:white; 
+                        border: solid 1px #6E6E6E;
+                        height: 30px; 
+                        font-size:18px; 
+                        vertical-align:9px;color:rgb(75, 72, 72)"/>
+
+                    <input placeholder="число/степень" class="calcus1" 
+                            id="num2"
+                            style="background-color:white; 
+                            border: solid 1px #6E6E6E;
+                            height: 30px; 
+                            font-size:18px; 
+                            vertical-align:9px;color:rgb(75, 72, 72)"/>
+                </div>
+
+                <div id="operator_btns" align="center" style="transform: translateY(5px);">
+                    <button id = "plus" class="operator" onclick="op='+'">+</button>
+                    <button id = "minus" class="operator" onclick="op='-'">-</button>
+                    <button id = "times" class="operator" onclick="op='*'">x</button>
+                    <button id = "divide" class="operator" onclick="op='/'">:</button>
+                    <button id = "square" class = "operator" onclick = "op = '^'">xⁱ</button>
+                    <button id = "root" class = "operator" onclick = "op = '✓'">√</button>
+                </div>
+
+                
+                <div align = 'center' style="transform: translateY(10px);">
+                    <button onclick="func()" class="count">count</button>
+                </div>
+                
+
+                <p class = "res" id="result" align="center">
+                    <a href=""></a>
+                </p>
+
+
+                <script src = 'main.js'></script>
+            </article>
+
+            <article id = 'main_2'>
+                <h2 align = 'center'>
+                    Как пользоваться калькуляторoм
+                </h2>
+
+                <p style="font-size: 20px; font: bolder; transform: translateX(0px);"">
+                    <b >&nbsp;&nbsp;&nbsp;&nbsp;Алгоритм использования довольно прост:</b>
+                    <ul class="algmath" style="transform: translateX(25px);">
+                        <li id="algmath">
+                            <p><b>1.</b> В случае, если вам необхоодимо сложить/вычесть/умножить/поделить числа, 
+                            то в первую и вторую графу вводите необходимые значения;</p>
+                        </li>
+                        <li id="algmath">
+                            <p><b>2.</b> В случае, если вам необхоимо вычислить корень или возвести число в какую-то степень, 
+                            то в первую графу вводите само число, а во вторую степень или же степень корня (если корень обычный, то вводите 2).</p>
+                        </li>
+                    </ul>
+                </p>
+            </article>
+            
+            <article id = 'main_3'>
+                <h2 align = 'center'>
+                    Содержание раздела
+                </h2>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<b>В</b> данном разделе помимо калькулятора также представлены конспекты с объяснением тем.
+                    То есть вы можете не только быстро посчитать необходимые числа, а также подтянуть западающие темы и закрепить знания на тренажерах.
+                </p>
+
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Так например в данный момент вы можете уже ознакомиться с материалами по таким темам, как:
+                </p>
+                <div style="transform: translateX(50px);">
+                    <ul class="listmaths">
+                        <li><a href="../../materials/Конспект_Степени и корни.pdfs" id="extent" title="Тык" target="_blank">Степени и корни</a></li>
+                        <li><a href="../../materials/Конспект_Рациональные алгебраические выражения.pdf" id="algebra" title="Тык" target="_blank">Рациональные алгебраические выражения</a></li>
+                        <li><a href="" id="justmaths" title="Тык" target="Тык">Практикум по алгебре повышенной сложности</a></li> //добавить сюда задания с сборника Сканави
+                    </ul>
+                </div>
+            </article>
+
+        </main>
+    </body>
+</html>
