@@ -205,11 +205,11 @@ function Vel() {
             }
         }                                                                
     }
-    document.getElementById("Solve").innerHTML = Solve;
-    document.getElementById("Solve_1").innerHTML = Solve_1;
-    document.getElementById("Solve_2").innerHTML = Solve_2;
-    document.getElementById("Solve_3").innerHTML = Solve_3;
-    document.getElementById("Solve_4").innerHTML = Solve_4;
+    document.getElementById("Solve_mov").innerHTML = Solve;
+    document.getElementById("Solve_1_mov").innerHTML = Solve_1;
+    document.getElementById("Solve_2_mov").innerHTML = Solve_2;
+    document.getElementById("Solve_3_mov").innerHTML = Solve_3;
+    document.getElementById("Solve_4_mov").innerHTML = Solve_4;
 }
 
 function Vel_end() {
@@ -288,16 +288,16 @@ function Vel_end() {
                         vk = (2 * a * s + v0 ** 2) ** i
 
                         Solve = `${vk}`
-                        Solve_1 = ``
-                        Solve_2 = ``
-                        Solve_3 = ``
-                        Solve_4 = ``
+                        Solve_1 = ` `
+                        Solve_2 = ` `
+                        Solve_3 = ` `
+                        Solve_4 = ` `
                     } else {
                         Solve = `Недостаточно даных`
-                        Solve_1 = ``
-                        Solve_2 = ``
-                        Solve_3 = ``
-                        Solve_4 = ``
+                        Solve_1 = ` `
+                        Solve_2 = ` `
+                        Solve_3 = ` `
+                        Solve_4 = ` `
                     }
                 } 
                 else if (a == 0) {
@@ -305,17 +305,17 @@ function Vel_end() {
                         vk = (2 * s - v0) / t
 
                         Solve = `${vk}`
-                        Solve_1 = ``
-                        Solve_2 = ``
-                        Solve_3 = ``
-                        Solve_4 = ``
+                        Solve_1 = ` `
+                        Solve_2 = ` `
+                        Solve_3 = ` `
+                        Solve_4 = ` `
                     }
                     else {
                         Solve = `Недостаточно данных`
-                        Solve_1 = ``
-                        Solve_2 = ``
-                        Solve_3 = ``
-                        Solve_4 = ``
+                        Solve_1 = ` `
+                        Solve_2 = ` `
+                        Solve_3 = ` `
+                        Solve_4 = ` `
                     }
                 }
                 else if (s == 0){
@@ -323,28 +323,28 @@ function Vel_end() {
                         vk = v0 + a * t
 
                         Solve = `${vk}`
-                        Solve_1 = ``
-                        Solve_2 = ``
-                        Solve_3 = ``
-                        Solve_4 = ``
+                        Solve_1 = ` `
+                        Solve_2 = ` `
+                        Solve_3 = ` `
+                        Solve_4 = ` `
                     }
                     else{
                         Solve = `Недостаточно данных`
-                        Solve_1 = ``
-                        Solve_2 = ``
-                        Solve_3 = ``
-                        Solve_4 = ``
+                        Solve_1 = ` `
+                        Solve_2 = ` `
+                        Solve_3 = ` `
+                        Solve_4 = ` `
                     }
                 }
             }
             
         }
     }
-    document.getElementById("Solve").innerHTML = Solve;
-    document.getElementById("Solve_1").innerHTML = Solve_1;
-    document.getElementById("Solve_2").innerHTML = Solve_2;
-    document.getElementById("Solve_3").innerHTML = Solve_3;
-    document.getElementById("Solve_4").innerHTML = Solve_4;
+    document.getElementById("Solve_mov").innerHTML = Solve;
+    document.getElementById("Solve_1_mov").innerHTML = Solve_1;
+    document.getElementById("Solve_2_mov").innerHTML = Solve_2;
+    document.getElementById("Solve_3_mov").innerHTML = Solve_3;
+    document.getElementById("Solve_4_mov").innerHTML = Solve_4;
 }
 
 function Time() {
@@ -385,17 +385,17 @@ function Time() {
                 t = (vk - v0) / a
 
                 Solve = `${t}`
-                Solve_1 = ``
-                Solve_2 = ``
-                Solve_3 = ``
-                Solve_4 = ``
+                Solve_1 = ` `
+                Solve_2 = ` `
+                Solve_3 = ` `
+                Solve_4 = ` `
             }
             else {
                 Solve = `Проверьте правильность введенных данных.`
-                Solve_1 = ``
-                Solve_2 = ``
-                Solve_3 = ``
-                Solve_4 = ``
+                Solve_1 = ` `
+                Solve_2 = ` `
+                Solve_3 = ` `
+                Solve_4 = ` `
             }
             
         }
@@ -407,17 +407,17 @@ function Time() {
                     t = (-v0 + check ** i)/a
     
                     Solve = `${t}`
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve_1 = ` `
+                    Solve_2 = ` `
+                    Solve_3 = ` `
+                    Solve_4 = ` `
                 }
                 else {
                     Solve = `недостаточно даных`
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve_1 = ` `
+                    Solve_2 = ` `
+                    Solve_3 = ` `
+                    Solve_4 = ` `
                 }
             }
             else if (v0 == 0){
@@ -427,17 +427,17 @@ function Time() {
                     t = (-vk + check ** i) / a
     
                     Solve = `${t}`
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve_1 = ` `
+                    Solve_2 = ` `
+                    Solve_3 = ` `
+                    Solve_4 = ` `
                 }
                 else {
                     Solve = `недостаточно даных`
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve_1 = ` `
+                    Solve_2 = ` `
+                    Solve_3 = ` `
+                    Solve_4 = ` `
                 }
             }
     
@@ -446,17 +446,17 @@ function Time() {
                     t = 2 * s / (v0 + vk)
     
                     Solve = `${t}`
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve_1 = ` `
+                    Solve_2 = ` `
+                    Solve_3 = ` `
+                    Solve_4 = ` `
                 }
                 else {
                     Solve = `Недостаточно данных`
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve_1 = ` `
+                    Solve_2 = ` `
+                    Solve_3 = ` `
+                    Solve_4 = ` `
                 }
             }
             else if (s == 0) {
@@ -464,26 +464,26 @@ function Time() {
                     t = (vk - v0)/a
     
                     Solve = `${t}`
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve_1 = ` `
+                    Solve_2 = ` `
+                    Solve_3 = ` ` 
+                    Solve_4 = ` `
                 }
                 else {
                     Solve = `Недостаточно данных`
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve_1 = ` `
+                    Solve_2 = ` `
+                    Solve_3 = ` `
+                    Solve_4 = ` `
                 }
             }
         }
     }
-    document.getElementById("Solve").innerHTML = Solve;
-    document.getElementById("Solve_1").innerHTML = Solve_1;
-    document.getElementById("Solve_2").innerHTML = Solve_2;
-    document.getElementById("Solve_3").innerHTML = Solve_3;
-    document.getElementById("Solve_4").innerHTML = Solve_4;
+    document.getElementById("Solve_mov").innerHTML = Solve;
+    document.getElementById("Solve_1_mov").innerHTML = Solve_1;
+    document.getElementById("Solve_2_mov").innerHTML = Solve_2;
+    document.getElementById("Solve_3_mov").innerHTML = Solve_3;
+    document.getElementById("Solve_4_mov").innerHTML = Solve_4;
 }
 
 function Acceler() {
@@ -506,93 +506,99 @@ function Acceler() {
 
     if (a != 0) {
         Solve = `Ускорение уже известно`
-        Solve_1 = ``
-        Solve_2 = ``
-        Solve_3 = ``
-        Solve_4 = ``
+        Solve_1 = ` `
+        Solve_2 = ` `
+        Solve_3 = ` `
+        Solve_4 = ` `
     }
     else {
         if (x != 0) {
             Solve = `Все данные уже известны`
-            Solve_1 = ``
-            Solve_2 = ``
-            Solve_3 = ``
-            Solve_4 = ``
+            Solve_1 = ` `
+            Solve_2 = ` `
+            Solve_3 = ` `
+            Solve_4 = ` `
         }
         else {
             if (vk == 0) {
                 if (t != 0) {
                     a = (2 * s - 2 * v0 * t)/t**2
 
-                    Solve = ``
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve = ` `
+                    Solve_1 = ` `
+                    Solve_2 = ` `
+                    Solve_3 = ` `
+                    Solve_4 = ` `
                 }
                 else {
                     Solve = `Недостаточно данных`
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve_1 = ` `
+                    Solve_2 = ` ` 
+                    Solve_3 = ` `
+                    Solve_4 = ` `
                 }
             }
             else if (v0 == 0) {
                 if (t != 0) {
                     a = (2 * s - 2 * v0 * t) / t**2
 
-                    Solve = ``
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve = ` `
+                    Solve_1 = ` `
+                    Solve_2 = ` `
+                    Solve_3 = ` `
+                    Solve_4 = ` `
                 }
                 else {
                     Solve = `Недостаточно данных`
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve_1 = ` `
+                    Solve_2 = ` `
+                    Solve_3 = ` `
+                    Solve_4 = ` `
                 }
             }
             else if (t == 0) {
                 if (s != 0) {
                     a = (vk**2 - v0**2)/(2 * s)
 
-                    Solve = ``
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve = ` `
+                    Solve_1 = ` `
+                    Solve_2 = ` `
+                    Solve_3 = ` `
+                    Solve_4 = ` `
                 }
                 else {
                     Solve = `Недостаточно даных`
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve_1 = ` `
+                    Solve_2 = ` `
+                    Solve_3 = ` `
+                    Solve_4 = ` `
                 }
             }
             else if (s == 0) {
                 if (t != 0) {
                     a = (vk - v0)/t
 
-                    Solve = ``
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve = ` `
+                    Solve_1 = ` `
+                    Solve_2 = ` `
+                    Solve_3 = ` `
+                    Solve_4 = ` `
                 }
                 else {
                     Solve = `Недостаточно данных`
-                    Solve_1 = ``
-                    Solve_2 = ``
-                    Solve_3 = ``
-                    Solve_4 = ``
+                    Solve_1 = ` `
+                    Solve_2 = ` `
+                    Solve_3 = ` `
+                    Solve_4 = ` `
                 }
             }
         }
     }
+
+    document.getElementById("Solve_mov").innerHTML = Solve;
+    document.getElementById("Solve_1_mov").innerHTML = Solve_1;
+    document.getElementById("Solve_2_mov").innerHTML = Solve_2;
+    document.getElementById("Solve_3_mov").innerHTML = Solve_3;
+    document.getElementById("Solve_4_mov").innerHTML = Solve_4;
 }
 

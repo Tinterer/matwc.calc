@@ -100,6 +100,17 @@ body {
     border-radius: 10px;
 }
 
+.inputs_accel_mov {
+    background-color: white;
+    border: solid 1px #6E6E6E;
+    border-radius: 10px;
+    width: 104px;
+    height: 35px;
+    font-size: 12px;
+    vertical-align: 9px;
+    color: rgb(75, 72, 72);
+}
+
 .inputs_pulse {
     background-color: white;
     border: solid 1px #6E6E6E;

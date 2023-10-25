@@ -14,16 +14,16 @@ function Mass_1() {
 
     x = m1 * v1 * m2 * v2 * v
 
-    if (x != 0) {
-        Solve = `Все данные известны`;
+    if (m1 != 0) {
+        Solve = `Искомое значение уже известно`;
         Solve1 = ` `;
         Solve2 = ` `;
         Solve3 = ` `;
         Solve4 = ` `;
     }
     else {
-        if (m1 != 0) {
-            Solve = `Искомое значение уже известно`;
+        if (x != 0) {
+            Solve = `Все данные известны`;
             Solve1 = ` `;
             Solve2 = ` `;
             Solve3 = ` `;
@@ -34,16 +34,16 @@ function Mass_1() {
                 m1 = m2 * (v - v2) / (v1 - v)
 
                 Solve = `${m1}`;
-                Solve1 = ``;
-                Solve2 = ``;
-                Solve3 = ``;
-                Solve4 = ``;
+                Solve1 = ` `;
+                Solve2 = ` `;
+                Solve3 = ` `;
+                Solve4 = ` `;
             } else {
                 Solve = `Проверьте правильность введенных данных`;
-                Solve1 = ``;
-                Solve2 = ``;
-                Solve3 = ``;
-                Solve4 = ``;
+                Solve1 = ` `;
+                Solve2 = ` `;
+                Solve3 = ` `;
+                Solve4 = ` `;
             }
 
         }
@@ -65,20 +65,20 @@ function Velocity_1() {
     var Solve3;
     var Solve4;
 
-    var m1 = Number(document.getElementById('mass_1').value);
-    var v1 = Number(document.getElementById('velocity_1').value);
-    var m2 = Number(document.getElementById('mass_2').value);
-    var v2 = Number(document.getElementById('velocity_2').value);
-    var v = Number(document.getElementById('velocity_after').value);
+    var m1 = Number(document.getElementById("mass_1").value);
+    var v1 = Number(document.getElementById("velocity_1").value);
+    var m2 = Number(document.getElementById("mass_2").value);
+    var v2 = Number(document.getElementById("velocity_2").value);
+    var v = Number(document.getElementById("velocity_after").value);
 
     x = m1 * v1 * m2 * v2 * v
 
     if (x != 0) {
         Solve = `Все данные известны`;
-        Solve1 = ``;
-        Solve2 = ``;
-        Solve3 = ``;
-        Solve4 = ``;
+        Solve1 = ` `;
+        Solve2 = ` `;
+        Solve3 = ` `;
+        Solve4 = ` `;
     }
     else {
         if (v1 != 0) {
