@@ -87,15 +87,36 @@ body {
 }
 
 .operator {
-    height: 35px;
-    width: 104px;
+    height: 40px;
+    width: 120px;
     font-size: 12px;
     border-radius: 10px;
 }
 
 .operator_pulse {
-    height: 35px;
-    width: 104px;
+    height: 40px;
+    width: 120px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.operator_potenc {
+    height: 40px;
+    width: 120px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.operator_kinetik {
+    height: 40px;
+    width: 120px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.operator_ConsEnergy {
+    height: 40px;
+    width: 120px;
     font-size: 12px;
     border-radius: 10px;
 }
@@ -104,8 +125,8 @@ body {
     background-color: white;
     border: solid 1px #6E6E6E;
     border-radius: 10px;
-    width: 104px;
-    height: 35px;
+    width: 120px;
+    height: 40px;
     font-size: 12px;
     vertical-align: 9px;
     color: rgb(75, 72, 72);
@@ -115,8 +136,41 @@ body {
     background-color: white;
     border: solid 1px #6E6E6E;
     border-radius: 10px;
-    width: 104px;
-    height: 35px;
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+    vertical-align: 9px;
+    color: rgb(75, 72, 72);
+}
+
+.inputs_potenc {
+    background-color: white;
+    border: solid 1px #6E6E6E;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+    vertical-align: 9px;
+    color: rgb(75, 72, 72);
+}
+
+.inputs_kinetik {
+    background-color: white;
+    border: solid 1px #6E6E6E;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+    vertical-align: 9px;
+    color: rgb(75, 72, 72);
+}
+
+.inputs_ConsEnergy {
+    background-color: white;
+    border: solid 1px #6E6E6E;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
     font-size: 12px;
     vertical-align: 9px;
     color: rgb(75, 72, 72);

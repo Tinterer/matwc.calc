@@ -8,6 +8,8 @@
 
         <script src="UniAccMo.js"></script>
         <script src="ConsMomLaw.js"></script>
+        <script src="PotencEnerg.js"></script>
+        <script src="KinetikEnerg.js"></script>
         <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
 
@@ -31,11 +33,11 @@
                     </summary>
 
                     <div align = 'center'>
-                        <input class = 'inputs_accel_mov' id="square" placeholder="   Расстояние"/>
-                        <input class = 'inputs_accel_mov' id="vel_0" placeholder="    V нулевое"/>
-                        <input class = 'inputs_accel_mov' id="vel_k" placeholder="   V конечное"/>
-                        <input class = 'inputs_accel_mov' id="acceler" placeholder="    Ускорение"/>
-                        <input class = 'inputs_accel_mov' id="time"  placeholder="       Время"/>
+                        <input class = 'inputs_accel_mov' id="square" placeholder="Расстояние"/>
+                        <input class = 'inputs_accel_mov' id="vel_0" placeholder="V нулевое"/>
+                        <input class = 'inputs_accel_mov' id="vel_k" placeholder="V конечное"/>
+                        <input class = 'inputs_accel_mov' id="acceler" placeholder="Ускорение"/>
+                        <input class = 'inputs_accel_mov' id="time"  placeholder="Время"/>
                     </div>
     
                     <div align = 'center'>
@@ -57,19 +59,10 @@
 
                 <details style="font-family: Arial, Helvetica, sans-serif; font-style: normal; color: antiquewhite;">
                     <summary>
-                        Баллистика
-                    </summary>
-
-                    <div align = 'center'>
-                        <input id = 'square'
-                    </div>
-
-                </details>
-
-                <details style="font-family: Arial, Helvetica, sans-serif; font-style: normal; color: antiquewhite;">
-                    <summary>
                         Потенциальная энергия
                     </summary>
+
+                    <p>Данный калькулятор актуален для задач, в которых необходимо найти потенциальную энергию одного тела.</p>
 
                     <div align = 'center'>
                         <input id = 'mass' class = 'inputs_potenc' placeholder="M">
@@ -80,14 +73,40 @@
                     <div align = 'center'>
                         <button class = 'operator_potenc' onclick="Mass_potenc()">Масса</button>
                         <button class = 'operator_potenc' onclick="Height_potenc()">Высота</button>
-                        <button class = 'operator_potenc' onclick="Energ_potnec()">Энергиия</button>
+                        <button class = 'operator_potenc' onclick="Energ_potenc()">Энергиия</button>
                     </div>
+
+                    <p class = "res" id="result"></p>
+                    <p class = "solving" id = "Solve_ep"></p>
+                    <p class = "solving" id = "Solve_1_ep"></p>
+                    <p class = "solving" id = "Solve_2_ep"></p>
+                    <p class = "solving" id = "Solve_3_ep"></p>
+                    <p class = "solving" id = "Solve_4_ep"></p>
                 </details>
 
                 <details style="font-family: Arial, Helvetica, sans-serif; font-style: normal; color: antiquewhite;">
                     <summary>
                         Кинетическая энергия
                     </summary>
+
+                    <div align = 'center'>
+                        <input id = 'mass_kin' class = 'inputs_kinetik' placeholder="M">
+                        <input id = 'velocity_kinetik' class = 'inputs_kinetik' placeholder="V">
+                        <input id = 'e_kinetik' class = 'inputs_kinetik' placeholder="E">
+                    </div>
+
+                    <div align = 'center'>
+                        <button class = 'operator_kinetik' onclick="Mass_kinetik()">Масса</button>
+                        <button class = 'operator_kinetik' onclick="Velocity_kinetik()">Скорость</button>
+                        <button class = 'operator_kinetik' onclick="Energ_kinetik()">Энергиия</button>
+                    </div>
+
+                    <p class = "res" id="result"></p>
+                    <p class = "solving" id = "Solve_kin"></p>
+                    <p class = "solving" id = "Solve_1_kin"></p>
+                    <p class = "solving" id = "Solve_2_kin"></p>
+                    <p class = "solving" id = "Solve_3_kin"></p>
+                    <p class = "solving" id = "Solve_4_kin"></p>
                 </details>
 
                 <details style="font-family: Arial, Helvetica, sans-serif; font-style: normal; color: antiquewhite;">
@@ -96,8 +115,29 @@
                     </summary>
 
                     <div align = 'center'>
-
+                        <input id = 'mass_cons' class = 'inputs_ConsEnergy' placeholder="M">
+                        <input id = 'velocity_cons' class = 'inputs_ConsEnergy' placeholder="V">
+                        <input id = 'height_cons' class = 'inputs_ConsEnergy' placeholder="H">
+                        <input id = 'e_pot_cons' class = 'inputs_ConsEnergy' placeholder="Ek">
+                        <input id = 'e_kin_cons' class = 'inputs_ConsEnergy' placeholder="Ep">
+                        <input id = 'e_sum_cons' class = 'inputs_ConsEnergy' placeholder="E">
                     </div>
+
+                    <div align = 'center'>
+                        <button class="operator_ConsEnergy" onclick="Mass_cons()">Масса</button>
+                        <button class="operator_ConsEnergy" onclick="Velocity_cons()">Скорость</button>
+                        <button class="operator_ConsEnergy" onclick="Height_cons">Высота</button>
+                        <button class="operator_ConsEnergy" onclick="En_kin_cons">Е кин.</button>
+                        <button class="operator_ConsEnergy" onclick="En_pot_cons">Е пот.</button>
+                        <button class="operator_ConsEnergy" onclick="En_cons">Е</button>
+                    </div>
+
+                    <p class = "res" id="result"></p>
+                    <p class = "solving" id = "Solve_cons"></p>
+                    <p class = "solving" id = "Solve_1_cons"></p>
+                    <p class = "solving" id = "Solve_2_cons"></p>
+                    <p class = "solving" id = "Solve_3_cons"></p>
+                    <p class = "solving" id = "Solve_4_cons"></p>
 
                 </details>
 
@@ -130,13 +170,6 @@
                     <p class = "solving" id = "Solve_2_pulse"></p>
                     <p class = "solving" id = "Solve_3_pulse"></p>
                     <p class = "solving" id = "Solve_4_pulse"></p>
-
-                </details>
-
-                <details style="font-family: Arial, Helvetica, sans-serif; font-style: normal; color: antiquewhite;">
-                    <summary>
-                        Момент силы
-                    </summary>
 
                 </details>
             </article>
