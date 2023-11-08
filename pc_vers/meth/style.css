@@ -8,51 +8,6 @@ html {
     color: aliceblue;
 }
 
-@-webkit-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    0% {opacity: 0}
-    100% {opacity: 1;}
-}
-
-#main_1 {
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-}
-
-#main_0 {
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-}
-
-#main_2 {
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-}
-
-#main_3 {
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-}
 
 h1 {
     color: rgb(255, 244, 229);
@@ -140,16 +95,6 @@ body {
 
 /* ulhornavbar будет айди для списка ul в горизонтальном навбаре*/
 
-@-webkit-keyframes but_an {
-    50% {opacity: 0.5;}
-    100% {opacity: 1;}
-}
-
-@keyframes but_an {
-    50% {opacity: 0.5}
-    100% {opacity: 1;}
-}
-
 #lihornavbar_1 {
     margin: auto;
     display: inline-block;
@@ -157,8 +102,6 @@ body {
     animation-duration: 0.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-name: but_an;
-    animation-name: but_an;
 }
 
 #lihornavbar_1 a {
@@ -187,8 +130,6 @@ body {
     animation-duration: 1.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-name: but_an;
-    animation-name: but_an;
 }
 
 #lihornavbar_2 a {
@@ -217,8 +158,6 @@ body {
     animation-duration: 3s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-name: but_an;
-    animation-name: but_an;
 }
 
 #lihornavbar_3 a {

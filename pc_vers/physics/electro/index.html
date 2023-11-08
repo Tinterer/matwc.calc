@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <meta name="author" content="Mathew Teslov">
         <meta name="description" content="My school project">
+
+        <script src="omLaw.js"></script>
+        <script src="i_count.js"></script>
         <title>clc.mechanic</title>
     </head>
 
@@ -20,9 +23,92 @@
 
         <main>
             
-            <article>
-               
-            </article>
+            <details style="font-family: Arial, Helvetica, sans-serif; font-style: normal; color: antiquewhite;">
+                <summary>
+                    Закон Ома
+                </summary>
+
+                <div align = 'center'>
+                    <input id = 'voltage' class="inputs_om_law" placeholder="U">
+                    <input id = 'resistance' class="inputs_om_law" placeholder="R">
+                    <input id = 'amperage' class="inputs_om_law" placeholder="I"> 
+                </div>
+
+                <div align = 'center'>
+                    <button class = 'inputs_operator_omlaw' onclick="Voltage()">Напряжение</button>
+                    <button class = 'inputs_operator_omlaw' onclick="Resistance()">Сопротивление</button>
+                    <button class = 'inputs_operator_omlaw' onclick="Amperage()">Сила тока</button>
+                </div>
+                
+                <p class = "res" id="result"></p>
+                <p class = "solving" id = "Solve_om"></p>
+                <p class = "solving" id = "Solve_1_om"></p>
+                <p class = "solving" id = "Solve_2_om"></p>
+                <p class = "solving" id = "Solve_3_om"></p>
+                <p class = "solving" id = "Solve_4_om"></p>
+            </details>
+
+            <details style="font-family: Arial, Helvetica, sans-serif; font-style: normal; color: antiquewhite;">
+                <summary>
+                    Сила тока
+                </summary>
+
+                <p>Выберите вид подключения проводников</p>
+
+                <div align = 'center'>
+                    <select id="choice_type" class="choices">
+                        <option value="sequent">Последовательное</option>
+                        <option value="parallel">Параллельное</option>
+                    </select>
+                    <input class = 'inputs_I' id = 'I' placeholder="I">
+                    <input class = 'inputs_I' id = 'I_1' placeholder = 'I1'>
+                    <input class = 'inputs_I' id = 'I_2' placeholder="I2">
+                </div>
+
+                <div align = 'center'>
+                    <button class = 'inputs_operator_I' onclick="I()">Общая сила</button>
+                    <button class = 'inputs_operator_I' onclick="I_1()">Сила тока 1</button>
+                    <button class = 'inputs_operator_I' onclick="I_2()">Сила тока 2</button>
+                </div>
+
+                <p class = "res" id="result"></p>
+                <p class = "solving" id = "Solve_I"></p>
+                <p class = "solving" id = "Solve_1_I"></p>
+                <p class = "solving" id = "Solve_2_I"></p>
+                <p class = "solving" id = "Solve_3_I"></p>
+                <p class = "solving" id = "Solve_4_I"></p>
+            </details>
+
+            <details style="font-family: Arial, Helvetica, sans-serif; font-style: normal; color: antiquewhite;">
+                <summary>
+                    Сопротивление
+                </summary>
+
+                <p>Выберите вид подключения проводников</p>
+
+                <div align = 'center'>
+                    <select id="choice_type" class="choices">
+                        <option value="sequent">Последовательное</option>
+                        <option value="parallel">Параллельное</option>
+                    </select>
+                    <input class = 'inputs_R' id = 'R' placeholder="R">
+                    <input class = 'inputs_R' id = 'R_1' placeholder = 'R1'>
+                    <input class = 'inputs_R' id = 'R_2' placeholder="R2">
+                </div>
+
+                <div align = 'center'>
+                    <button class = 'inputs_operator_R' onclick="R()">Общее сопротивление</button>
+                    <button class = 'inputs_operator_R' onclick="R_1()">Сопротивление 1</button>
+                    <button class = 'inputs_operator_R' onclick="R_2()">Сопротивление 2</button>
+                </div>
+
+                <p class = "res" id="result"></p>
+                <p class = "solving" id = "Solve_R"></p>
+                <p class = "solving" id = "Solve_1_R"></p>
+                <p class = "solving" id = "Solve_2_R"></p>
+                <p class = "solving" id = "Solve_3_R"></p>
+                <p class = "solving" id = "Solve_4_R"></p>
+            </details>
 
             <details style="color: aliceblue;" open>
                 <summary style="font-family: Arial, Helvetica, sans-serif; font-style: normal; color: antiquewhite;">
@@ -43,26 +129,6 @@
                     </ul>
                 </p>
             </details>
-            <!--- <article>
-                <h2>
-                    Как пользоваться калькулятором
-                </h2>
-
-                <p>
-                    Этот калькулятор уже несколько сложнее:
-                    <ul class="algmech">
-                        <li id="algmech">
-                            1. Для начала введите все известные данные(те значения, которые надоо найти, обозначьте нулем);
-                        </li>
-                        <li id="algmech">
-                            2. Далее нажмите на кнопку той переменной, которую вам необходимо найти. После этого калькулятор посчитает значение и выведет вам решение.
-                        </li>
-                        <li id="algmech">
-                            *В том случае, если вместо ответа выводится какое-либо буквенное значение, то проверьте правильность введенных данных.
-                        </li>
-                    </ul>
-                </p>
-            </article>-->
 
             <article>
                 <h2>
