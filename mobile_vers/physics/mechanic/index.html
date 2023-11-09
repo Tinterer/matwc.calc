@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="author" content="Mathew Teslov">
+        <meta name="description" content="My school project">
+        <title>clc.mechanic</title>
+
+        <script src="UniAccMo.js"></script>
+        <script src="ConsMomLaw.js"></script>
+        <script src="PotencEnerg.js"></script>
+        <script src="KinetikEnerg.js"></script>
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+
+    <body>
+        
+        
+
+        <main>
+            
+            <article>
+                <details style="font-family: Arial, Helvetica, sans-serif; font-style: normal; color: antiquewhite;">
+                    <summary>
+                            Равноускоренное движение
+                    </summary>
+
+                    <div align = 'center'>
+                        <input class = 'inputs_accel_mov' id="square" placeholder="Расстояние"/>
+                        <input class = 'inputs_accel_mov' id="vel_0" placeholder="V нулевое"/>
+                        <input class = 'inputs_accel_mov' id="vel_k" placeholder="V конечное"/>
+                        <input class = 'inputs_accel_mov' id="acceler" placeholder="Ускорение"/>
+                        <input class = 'inputs_accel_mov' id="time"  placeholder="Время"/>
+                    </div>
+    
+                    <div align = 'center'>
+                        <button class = "operator" onclick="Square()">Расстояние</button>
+                        <button class = "operator" onclick="Vel()">V нулевое</button>
+                        <button class = "operator" onclick="Vel_end()">V конечное</button>
+                        <button class = "operator" onclick="Acceler()">Ускорение</button>
+                        <button class = "operator" onclick="Time()">Время</button>
+                    </div>
+    
+                    <p class = "res" id="result"></p>
+                    <p class = "solving" id = "Solve_mov"></p>
+                    <p class = "solving" id = "Solve_1_mov"></p>
+                    <p class = "solving" id = "Solve_2_mov"></p>
+                    <p class = "solving" id = "Solve_3_mov"></p>
+                    <p class = "solving" id = "Solve_4_mov"></p>
+
+                </details>
+
+                <details style="font-family: Arial, Helvetica, sans-serif; font-style: normal; color: antiquewhite;">
+                    <summary>
+                        Потенциальная энергия
+                    </summary>
+
+                    <p>Данный калькулятор актуален для задач, в которых необходимо найти потенциальную энергию одного тела.</p>
+
+                    <div align = 'center'>
+                        <input id = 'mass' class = 'inputs_potenc' placeholder="M">
+                        <input id = 'height' class = 'inputs_potenc' placeholder="H">
+                        <input id = 'e_potc' class = 'inputs_potenc' placeholder="E">
+                    </div>
+
+                    <div align = 'center'>
+                        <button class = 'operator_potenc' onclick="Mass_potenc()">Масса</button>
+                        <button class = 'operator_potenc' onclick="Height_potenc()">Высота</button>
+                        <button class = 'operator_potenc' onclick="Energ_potenc()">Энергиия</button>
+                    </div>
+
+                    <p class = "res" id="result"></p>
+                    <p class = "solving" id = "Solve_ep"></p>
+                    <p class = "solving" id = "Solve_1_ep"></p>
+                    <p class = "solving" id = "Solve_2_ep"></p>
+                    <p class = "solving" id = "Solve_3_ep"></p>
+                    <p class = "solving" id = "Solve_4_ep"></p>
+                </details>
+
+                <details style="font-family: Arial, Helvetica, sans-serif; font-style: normal; color: antiquewhite;">
+                    <summary>
+                        Кинетическая энергия
+                    </summary>
+
+                    <div align = 'center'>
+                        <input id = 'mass_kin' class = 'inputs_kinetik' placeholder="M">
+                        <input id = 'velocity_kinetik' class = 'inputs_kinetik' placeholder="V">
+                        <input id = 'e_kinetik' class = 'inputs_kinetik' placeholder="E">
+                    </div>
+
+                    <div align = 'center'>
+                        <button class = 'operator_kinetik' onclick="Mass_kinetik()">Масса</button>
+                        <button class = 'operator_kinetik' onclick="Velocity_kinetik()">Скорость</button>
+                        <button class = 'operator_kinetik' onclick="Energ_kinetik()">Энергиия</button>
+                    </div>
+
+                    <p class = "res" id="result"></p>
+                    <p class = "solving" id = "Solve_kin"></p>
+                    <p class = "solving" id = "Solve_1_kin"></p>
+                    <p class = "solving" id = "Solve_2_kin"></p>
+                    <p class = "solving" id = "Solve_3_kin"></p>
+                    <p class = "solving" id = "Solve_4_kin"></p>
+                </details>
+
+                <details style="font-family: Arial, Helvetica, sans-serif; font-style: normal; color: antiquewhite;">
+                    <summary>
+                        Закон сохранения импульса
+                    </summary>
+
+                    <p id = 'pulse'>Данный калькулятор исключительно для ситуаций, в которых два тело абсолютно неупруго соударяются.</p>
+ 
+                    <div align = 'center'>
+                        <input id = 'mass_1' class = 'inputs_pulse' placeholder="M1">
+                        <input id = 'velocity_1' class = 'inputs_pulse' placeholder="V1">
+                        <input id = 'mass_2' class = 'inputs_pulse' placeholder="M2">
+                        <input id = 'velocity_2' class = 'inputs_pulse' placeholder="V2">
+                        <input id = 'velocity_after' class = 'inputs_pulse' placeholder="V">
+                    </div>
+
+                    <div align = 'center'>
+                        <button class = 'operator_pulse' onclick="Mass_1()">Масса 1</button>
+                        <button class = 'operator_pulse' onclick="Velocity_1()">Скорость 1</button>
+                        <button class = 'operator_pulse' onclick="Mass_2()">Масса 2</button>
+                        <button class = 'operator_pulse' onclick="Velocity_2()">Скорость 2</button>
+                        <button class = 'operator_pulse' onclick="Velocity()">Скорость</button>
+                    </div> 
+
+                    <p class = "res" id="result"></p>
+                    <p class = "solving" id = "Solve_pulse"></p>
+                    <p class = "solving" id = "Solve_1_pulse"></p>
+                    <p class = "solving" id = "Solve_2_pulse"></p>
+                    <p class = "solving" id = "Solve_3_pulse"></p>
+                    <p class = "solving" id = "Solve_4_pulse"></p>
+
+                </details>
+            </article>
+
+            <details style="color: aliceblue;" open>
+                <summary style="font-family: Arial, Helvetica, sans-serif; font-style: normal; color: antiquewhite;">
+                    Как пользоваться калькулятором
+                </summary>
+                <p>
+                    Этот калькулятор уже несколько сложнее:
+                    <ul class="algmech">
+                        <li id="algmech">
+                            1. Для начала введите все известные данные(те значения, которые надо найти или которые неизвестны, обозначьте нулем);
+                        </li>
+                        <li id="algmech">
+                            2. Далее нажмите на кнопку той переменной, которую вам необходимо найти. После этого калькулятор посчитает значение и выведет вам решение.
+                        </li>
+                        <li id="algmech">
+                            *В том случае, если вместо ответа выводится какое-либо буквенное значение, то проверьте правильность введенных данных.
+                        </li>
+                    </ul>
+                </p>
+            </details>
+
+            <article>
+                <h2>
+                    Содержание раздела
+                </h2>
+
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;В данном разделе вы можете не только решить задачи, но и ознакомиться с теоретическими материалама, а по некоторым темам даже
+                    присутствуют задачи, для отработки знаний на практике.
+                </p>
+            </article>
+        </main>
+
+        <div align = 'center' class = 'navbar'>
+            <ul id='ulhornavbar'><span>
+                <li id="lihornavbar"><a href="../../physics/index.html" title="Назад"><img src="../../home.png" width = '70'></a></li>
+                <li id="lihornavbar"class = "active"><a href="../../physics/mechanic/index.html" title="Раздел математики"><img src="../../mech.png" width="70"></a></li>
+                <li id="lihornavbar"><a href="../../physics/electro/index.html" title="Раздел электричества"><img src="../../electro.png" width = '70'></a></li>
+            </ul></span>
+        </div>
+    </body>
+</html>

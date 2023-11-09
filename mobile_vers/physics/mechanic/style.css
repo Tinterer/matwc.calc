@@ -44,17 +44,27 @@ body {
 }
 
 #ulhornavbar {
-    list-style-type: none;
+    /*list-style-type: none;*/
+    position: fixed;
     margin: 0;
-    padding: 0;
+    /*padding: 0;*/
     overflow: hidden;
     background-color: rgb(29, 29, 29);
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;  
     position: sticky;
-    top: 0;
+    bottom: 0;
 }
 
 /* ulhornavbar будет айди для списка ul в горизонтальном навбаре*/
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
 #lihornavbar {
     margin: auto;
@@ -65,25 +75,15 @@ body {
     display: block;
     color: white;
     text-align: center;
-    padding: 7px 45px;
+    padding: 60px 60px;
     text-decoration: none;
-    border-radius: 15px;
-}
-
-#lihornavbar:hover {
-    width: 205px;
-}
-
-#lihornavbar a:hover {
-    color: rgb(79, 64, 40);
-    background-color: #f7b335;
     border-radius: 15px;
 }
 
 .active {
     color: rgb(29, 29, 29);
     background-color: #bc8b30af;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 .operator {
@@ -182,83 +182,4 @@ body {
 
 .algmech {
     color: rgb(202, 201, 186);
-}
-
-.inputs_om_law {
-    background-color: white;
-    border: solid 1px #6E6E6E;
-    border-radius: 10px;
-    width: 120px;
-    height: 40px;
-    font-size: 12px;
-    vertical-align: 9px;
-    color: rgb(75, 72, 72);
-}
-
-.inputs_operator_omlaw {
-    height: 40px;
-    width: 120px;
-    font-size: 12px;
-    border-radius: 10px;
-}
-
-.inputs_I {
-    background-color: white;
-    border: solid 1px #6E6E6E;
-    border-radius: 10px;
-    width: 120px;
-    height: 40px;
-    font-size: 12px;
-    vertical-align: 9px;
-    color: rgb(75, 72, 72);
-}
-
-.inputs_operator_I {
-    height: 40px;
-    width: 120px;
-    font-size: 12px;
-    border-radius: 10px;
-}
-
-.inputs_R {
-    background-color: white;
-    border: solid 1px #6E6E6E;
-    border-radius: 10px;
-    width: 120px;
-    height: 40px;
-    font-size: 12px;
-    vertical-align: 9px;
-    color: rgb(75, 72, 72);
-}
-
-.inputs_operator_R {
-    height: 40px;
-    width: 120px;
-    font-size: 12px;
-    border-radius: 10px;
-}
-
-.inputs_U {
-    background-color: white;
-    border: solid 1px #6E6E6E;
-    border-radius: 10px;
-    width: 120px;
-    height: 40px;
-    font-size: 12px;
-    vertical-align: 9px;
-    color: rgb(75, 72, 72);
-}
-
-.inputs_operator_U {
-    height: 40px;
-    width: 120px;
-    font-size: 12px;
-    border-radius: 10px;
-}
-
-.choices {
-    height: 20px;
-    width: 120px;
-    font-size: 12px;
-    border-radius: 10px;
 }

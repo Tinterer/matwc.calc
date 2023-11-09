@@ -7,15 +7,11 @@
         <meta name="description" content="Калькулятор Матвея">
         <meta name="viewport" content="width=720">
         <title>clc.m2</title>
+
+        <script src="main.js"></script>
     </head>
     <body>
-        <div align = 'center' class="navbar">
-            <ul id='ulhornavbar'><span>
-                <li id="lihornavbar"><a href="../main/index.html" title="Главная страница"><img src="../home.png" width="70"></a></li>
-                <li id="lihornavbar" class='active' style="font: bolder; font-size: 23px;"><a href="../meth/index.html" title="Раздел математики"><img src="../images.png" width="70"></a></li>
-                <li id="lihornavbar" style="font: bolder; font-size: 23px;"><a href="../physics/index.html" title="Раздел физики"><img src="../physics.png" width="70"></a></li>
-            </span></ul>
-        </div>
+        
         
         <main>
             <article id = 'main_1'>
@@ -37,7 +33,7 @@
                             color: rgb(75, 72, 72)'/>
                     </div>
                     <div class = 'inputs' align = 'center'>
-                        <input id = 'num1' class = 'calcus1' align = 'center'
+                        <input id = 'num2' class = 'calcus1' align = 'center'
                             placeholder="second number/extent"
                             style = 'background-color: white;
                             border: solid 3px #6E6E6E;
@@ -57,18 +53,42 @@
                         <button id = "root" class = "operator" onclick = "op = '✓'">√</button>
                     </div>
                 
+                    <div align = 'center' >
+                        <button onclick="func()" class="count" style="height: 60px; width: 120px; font-size: 20px;">count</button>
+                    </div>
+
+                    <p class = "res" id="result" align="center">
+                        <a href=""></a>
+                    </p>
+
+                    <h2 align = 'center' style="font-size: 40px;">
+                        Как пользоваться калькуляторoм
+                    </h2>
+    
+                    <p style="font-size: 25px; font: bolder;"">
+                        <b >&nbsp;&nbsp;Алгоритм использования довольно прост:</b>
+                        <ul class="algmath" style="transform: translateX(25px);">
+                            <li id="algmath">
+                                <p><b>1.</b> В случае, если вам необхоодимо сложить/вычесть/умножить/поделить числа, 
+                                то в первую и вторую графу вводите необходимые значения;</p>
+                            </li>
+                            <li id="algmath">
+                                <p><b>2.</b> В случае, если вам необхоимо вычислить корень или возвести число в какую-то степень, 
+                                то в первую графу вводите само число, а во вторую степень или же степень корня (если корень обычный, то вводите 2).</p>
+                            </li>
+                        </ul>
+                    </p>
                 </div>
 
-                <div align = 'center' style = 'transform: translateY(10px);'>
-                    <button onclick="func()" class="count">count</button>
-                </div>
-
-                <p class = 'res' id = 'result' align = 'center'></p>
-
-                
             </article>
-        </main>
-        <script src="main.js"></script>
 
+            <div align = 'center' class="navbar">
+                <ul id='ulhornavbar'><span>
+                    <li id="lihornavbar"><a href="../main/index.html" title="Главная страница"><img src="../home.png" width="70"></a></li>
+                    <li id="lihornavbar" class='active' style="font: bolder; font-size: 23px;"><a href="../maths/index.html" title="Раздел математики"><img src="../images.png" width="70"></a></li>
+                    <li id="lihornavbar" style="font: bolder; font-size: 23px;"><a href="../physics/index.html" title="Раздел физики"><img src="../physics.png" width="70"></a></li>
+                </span></ul>
+            </div>
+        </main>
     </body>
 </html>

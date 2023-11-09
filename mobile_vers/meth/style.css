@@ -23,12 +23,6 @@ h3 {
     font: bold;
 }
 
-.operator {
-    height: 50px;
-    width: 50px;
-    border-radius: 15px;
-}
-
 p {
     color:rgb(255, 249, 237);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -40,8 +34,17 @@ a {
     text-decoration: none;
 }
 
+.operator {
+    height: 90px;
+    width: 90px;
+    border-radius: 45px;
+}
+
 .main_text {
     transform: translateY(150px);
+}
+.main_text2 {
+    transform: translateY(200px);
 }
 
 .title {
@@ -56,7 +59,7 @@ a {
     /*padding: 0;*/
     overflow: hidden;
     background-color: rgb(29, 29, 29);
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;  
     position: sticky;
     bottom: 0;
 }

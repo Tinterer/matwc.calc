@@ -7,6 +7,8 @@
 
         <script src="omLaw.js"></script>
         <script src="i_count.js"></script>
+        <script src="r_count.js"></script>
+        <script src="u_count.js"></script>
         <title>clc.mechanic</title>
     </head>
 
@@ -97,7 +99,7 @@
                 </div>
 
                 <div align = 'center'>
-                    <button class = 'inputs_operator_R' onclick="R()">Общее сопротивление</button>
+                    <button class = 'inputs_operator_R' onclick="R()">Cопротивление</button>
                     <button class = 'inputs_operator_R' onclick="R_1()">Сопротивление 1</button>
                     <button class = 'inputs_operator_R' onclick="R_2()">Сопротивление 2</button>
                 </div>
@@ -108,6 +110,37 @@
                 <p class = "solving" id = "Solve_2_R"></p>
                 <p class = "solving" id = "Solve_3_R"></p>
                 <p class = "solving" id = "Solve_4_R"></p>
+            </details>
+
+            <details style="font-family: Arial, Helvetica, sans-serif; font-style: normal; color: antiquewhite;">
+                <summary>
+                    Напряжение
+                </summary>
+
+                <p>Выберите вид подключения проводников</p>
+
+                <div align = 'center'>
+                    <select id="choice_type" class="choices">
+                        <option value="sequent">Последовательное</option>
+                        <option value="parallel">Параллельное</option>
+                    </select>
+                    <input class = 'inputs_U' id = 'U' placeholder="U">
+                    <input class = 'inputs_U' id = 'U_1' placeholder = 'U1'>
+                    <input class = 'inputs_U' id = 'U_2' placeholder="U2">
+                </div>
+
+                <div align = 'center'>
+                    <button class = 'inputs_operator_U' onclick="U()">Напряжение</button>
+                    <button class = 'inputs_operator_U' onclick="U_1()">Напряжение 1</button>
+                    <button class = 'inputs_operator_U' onclick="U_2()">Напряжение 2</button>
+                </div>
+
+                <p class = "res" id="result"></p>
+                <p class = "solving" id = "Solve_U"></p>
+                <p class = "solving" id = "Solve_1_U"></p>
+                <p class = "solving" id = "Solve_2_U"></p>
+                <p class = "solving" id = "Solve_3_U"></p>
+                <p class = "solving" id = "Solve_4_U"></p>
             </details>
 
             <details style="color: aliceblue;" open>
